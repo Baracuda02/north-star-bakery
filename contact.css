@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* =========================
+   General Styles
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #f8f1e5;
+  color: #6a4a3a;
+  line-height: 1.6;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d8b08c;
+}
+
+nav a {
+  color: #6a4a3a;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #d8b08c;
+}
+
+/* =========================
+   Page Header
+========================= */
+
+header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 30px 30px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 42px;
+  color: #6a4a3a;
+}
+
+/* =========================
+   Main Content
+========================= */
+
+main {
+  width: 100%;
+  padding: 10px 20px 50px;
+}
+
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(106, 74, 58, 0.1);
+}
+
+section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #6a4a3a;
+}
+
+section p {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   Contact Form
+========================= */
+
+form {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 2px solid #d8b08c;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+legend {
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #6a4a3a;
+}
+
+/* Labels */
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+/* Text Inputs */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #d8b08c;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #6a4a3a;
+  font-size: 16px;
+}
+
+/* Textarea */
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Input Focus */
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #d8b08c;
+  border-color: #6a4a3a;
+}
+
+/* Submit Button */
+
+input[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 9999px;
+  background-color: #6a4a3a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #d8b08c;
+}
+
+/* =========================
+   Location Section
+========================= */
+
+section:nth-of-type(2) {
+  text-align: center;
+}
+
+section:nth-of-type(2) p {
+  margin-bottom: 5px;
+}
+
+/* =========================
+   Hours Section
+========================= */
+
+section:nth-of-type(3) {
+  text-align: center;
+}
+
+section:nth-of-type(3) p {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #d8b08c;
+  padding: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #6a4a3a;
+}
+
+/* =========================
+   Tablet Layout
+   601px - 900px
+========================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+  nav {
+    padding: 15px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 16px;
+  }
+
+  header {
+    padding: 50px 25px 30px;
+  }
+
+  .header__title {
+    font-size: 36px;
+  }
+
+  main {
+    padding: 10px 15px 40px;
+  }
+
+  section {
+    padding: 35px 25px;
+  }
+
+  section h2 {
+    font-size: 27px;
+  }
+
+  form {
+    max-width: 650px;
+  }
+}
+
+/* =========================
+   Mobile Layout
+   600px and smaller
+========================= */
+
+@media (max-width: 600px) {
+  nav {
+    padding: 15px 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 7px;
+    font-size: 15px;
+  }
+
+  header {
+    padding: 40px 20px 25px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+
+  main {
+    padding: 5px 10px 30px;
+  }
+
+  section {
+    margin: 20px auto;
+    padding: 30px 18px;
+  }
+
+  section h2 {
+    font-size: 25px;
+  }
+
+  fieldset {
+    padding: 20px 15px;
+  }
+
+  legend {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
+
+/* JavaScript Validation Messages */
+
+.form-error {
+  color: #a33a3a;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: -10px;
+  margin-bottom: 12px;
+}
+
+/* Favorite Button */
+
+.favorite-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 9999px;
+  background-color: #6a4a3a;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.favorite-btn:hover {
+  background-color: #d8b08c;
+}

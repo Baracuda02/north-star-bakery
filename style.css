@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --brown: #6a4a3a;
+  --cream: #f8f1e5;
+  --light-brown: #d8b08c;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--brown);
+}
+
+/* Navigation Bar */
+
+nav {
+  height: 80px;
+  width: 100%;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1280px;
+}
+
+.nav__logo {
+  width: 100px;
+}
+
+.nav__links {
+  font-size: 18px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--brown);
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: var(--light-brown);
+}
+
+.nav__button {
+  border-radius: 9999px;
+  border: none;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--brown);
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav__button:hover {
+  background-color: var(--light-brown);
+}
+
+/* Heading */
+
+#home {
+  height: 50vh;
+  background-image: url(assets/bakery-storefront_c.png);
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+#home h1,
+#home p {
+  color: var(--white);
+}
+
+.home__para {
+  text-align: center;
+  color: white;
+}
+
+/* About us */
+
+#about {
+  padding: 60px 30px;
+  display: flex;
+  gap: 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+  margin: 30px 16px;
+}
+
+.about__container {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__para {
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.about__image {
+  width: 50%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.about__button {
+  border-radius: 9999px;
+  width: 120px;
+  padding: 12px 0;
+  background-color: var(--brown);
+  color: var(--white);
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.about__button:hover {
+  background-color: var(--light-brown);
+}
+
+/* Item */
+
+#item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+  padding: 60px 30px;
+  text-align: center;
+  gap: 20px;
+}
+
+.item__title {
+  margin-bottom: 5px;
+}
+
+.item__para {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.item__image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.item__product {
+  border: none;
+  text-decoration: underline;
+  color: #6a4a3a;
+  color: var(--brown);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.item__product:hover {
+  color: var(--light-brown);
+}
+
+#hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.hours__link {
+  text-decoration: underline;
+  color: #6a4a3a;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--white);
+  border-top: 1px solid var(--light-brown);
+  margin-top: 30px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer__link {
+  color: var(--brown);
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: var(--light-brown);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile Layout */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#about {
+  padding: 60px 30px;
+  align-items: center;
+}
+
+.about__image {
+  width: 50%;
+  object-fit: cover;
+}
+
+.about__container {
+  flex: 1;
+  padding: 20px;
+}
+
+#item {
+  padding: 60px 30px;
+  gap: 20px;
+}
+
+#hours {
+  padding: 60px 30px;
+  gap: 15px;
+}
+
+footer {
+  padding: 30px 20px;
+}
+
+h1,
+h2 {
+  color: var(--brown);
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+}
+
+header:not(#home) {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px 30px;
+  text-align: center;
+}
+
+header:not(#home) h1 {
+  margin-bottom: 15px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto 15px;
+}
+
+/* Media Layout */
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .nav__link {
+    margin-left: 0;
+  }
+
+  #about {
+    margin: 20px 10px;
+    padding: 25px 15px;
+  }
+
+  #item {
+    padding: 40px 15px;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  .nav__container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  #home {
+    height: 40vh;
+    padding: 20px;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 30px 16px;
+  }
+
+  .about__image {
+    width: 100%;
+    height: auto;
+  }
+
+  #item {
+    padding: 30px 16px;
+    text-align: center;
+  }
+
+  .item__image {
+    width: 100%;
+    height: auto;
+  }
+
+  #hours {
+    padding: 30px 16px;
+    text-align: center;
+  }
+
+  .footer__links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer__link {
+    padding: 10px;
+  }
+}
+
+/* Tablet Layout */
+@media (min-width: 601px) and (max-width: 900px) {
+  .nav__container {
+    padding: 10px 15px;
+  }
+
+  .nav__links {
+    font-size: 16px;
+  }
+
+  #about {
+    gap: 15px;
+    padding: 40px 20px;
+  }
+
+  .about__image {
+    width: 45%;
+    height: auto;
+  }
+
+  .about__container {
+    padding: 10px;
+  }
+
+  #item {
+    padding: 40px 20px;
+  }
+
+  #hours {
+    padding: 40px 20px;
+  }
+}

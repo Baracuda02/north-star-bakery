@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* =========================
+   General Styles
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #f8f1e5;
+  color: #6a4a3a;
+  line-height: 1.6;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d8b08c;
+}
+
+nav a {
+  color: #6a4a3a;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #d8b08c;
+}
+
+/* =========================
+   Main Story Header
+========================= */
+
+header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 30px 40px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #6a4a3a;
+}
+
+.header__para {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =========================
+   Main Sections
+========================= */
+
+main {
+  width: 100%;
+  padding: 10px 20px 40px;
+}
+
+section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(106, 74, 58, 0.1);
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* =========================
+   Ingredients Section
+========================= */
+
+#source {
+  border-left: 5px solid #d8b08c;
+}
+
+.source__title {
+  color: #6a4a3a;
+}
+
+.source__para {
+  font-size: 17px;
+}
+
+/* =========================
+   Staff Section
+========================= */
+
+#staff {
+  border-left: 5px solid #d8b08c;
+}
+
+.staff__title {
+  color: #6a4a3a;
+}
+
+.staff__para {
+  font-size: 17px;
+}
+
+/* =========================
+   Bakery Video
+========================= */
+
+#bakery-video {
+  text-align: center;
+}
+
+#bakery-video h2 {
+  margin-bottom: 20px;
+}
+
+#bakery-video video {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #d8b08c;
+  padding: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #6a4a3a;
+}
+
+/* =========================
+   Tablet Layout
+   601px - 900px
+========================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+  nav {
+    padding: 15px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 16px;
+  }
+
+  header {
+    padding: 50px 25px 30px;
+  }
+
+  .header__title {
+    font-size: 36px;
+  }
+
+  .header__para {
+    font-size: 17px;
+  }
+
+  main {
+    padding: 10px 15px 30px;
+  }
+
+  section {
+    padding: 35px 25px;
+  }
+
+  section h2 {
+    font-size: 27px;
+  }
+}
+
+/* =========================
+   Mobile Layout
+   600px and smaller
+========================= */
+
+@media (max-width: 600px) {
+  nav {
+    padding: 15px 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 7px;
+    font-size: 15px;
+  }
+
+  header {
+    padding: 40px 20px 25px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+
+  .header__para {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 5px 10px 25px;
+  }
+
+  section {
+    margin: 20px auto;
+    padding: 30px 20px;
+  }
+
+  section h2 {
+    font-size: 25px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  #bakery-video video {
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSB Contact Info</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact Info</a>
+    </nav>
+
+    <header>
+      <h1 class="header__title">Information about US!</h1>
+    </header>
+
+    <main>
+      <section id="order">
+        <h2 class="order__title">Inquiry and Pre-order Request</h2>
+
+        <form id="contactForm" action="#" method="post">
+          <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <p id="nameError" class="form-error"></p>
+            <br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <p id="emailError" class="form-error"></p>
+            <br /><br />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <br /><br />
+
+            <label for="request">What can we help you with?</label>
+            <select id="request" name="request">
+              <option value="inquiry">General Inquiry</option>
+              <option value="preorder">Preorder Request</option>
+              <option value="custom">Custom Order</option>
+            </select>
+
+            <br /><br />
+
+            <label for="message">Message:</label>
+            <br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="40"
+              required
+            ></textarea>
+            <p id="messageError" class="form-error"></p>
+            <br /><br />
+          </fieldset>
+
+          <input type="submit" value="Submit Request" />
+        </form>
+      </section>
+
+      <section>
+        <h2>Visit Us</h2>
+
+        <p>North Star Bakery</p>
+        <p>123 Main Street</p>
+        <p>Your City, State 12345</p>
+
+        <p>
+          We would love to see you in person! Stop by for a fresh baked treat or
+          to talk with us about your next order.
+        </p>
+      </section>
+
+      <section>
+        <h2>Hours of Operation</h2>
+
+        <p>Monday: 7:00 AM - 6:00 PM</p>
+        <p>Tuesday: 7:00 AM - 6:00 PM</p>
+        <p>Wednesday: 7:00 AM - 6:00 PM</p>
+        <p>Thursday: 7:00 AM - 6:00 PM</p>
+        <p>Friday: 7:00 AM - 7:00 PM</p>
+        <p>Saturday: 8:00 AM - 7:00 PM</p>
+        <p>Sunday: 8:00 AM - 3:00 PM</p>
+      </section>
+
+      <section>
+        Contact Us │ Inquiry and Preorder Request │ Form │ Visit Us │ Address
+        and location information │ Hours of Operation - Monday - Sunday hours
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 North Star Bakery</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
